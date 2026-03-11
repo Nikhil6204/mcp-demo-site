@@ -6,9 +6,9 @@ A simple demo website created to test the **MCP Universal Command Center**.
 
 ```
 demo-site/
-âââ index.html   â Main page with login button
-âââ styles.css   â All styles (button position is here)
-âââ README.md    â This file
+├── index.html   ← Main page with login button
+├── styles.css   ← All styles (button position is here)
+├── README.md    ← This file
 ```
 
 ## The Test
@@ -22,21 +22,21 @@ Use the MCP Command Center to move it to the right by giving this command:
 MCP will:
 1. Scan this repo
 2. Find the `.button-area` CSS rule in `styles.css`
-3. Draft a change: `justify-content: flex-start` â’ `justify-content: flex-end`
+3. Draft a change: `justify-content: flex-start` → `justify-content: flex-end`
 4. Open a Pull Request
 5. Update this README
 
 ## Current Button State
 
-| Property | Current Value | Expected After MCP 
-| --- | --- | --- |
-| text-align | right | right |
+| Property | Value |
+| --- | --- |
+| justify-content | flex-end |
 
-Note: The styles.css file has been updated to reflect the new button position.
+Note: The styles.css file has been updated to reflect the change:
 ```css
 /* styles.css */
-.button-area {
-  /* existing styles */
-  text-align: right; /* Move login button to right side */
+.b {
+  /* ... existing styles ... */
+  justify-content: flex-end; /* Changed from flex-start to flex-end */
 }
 ```

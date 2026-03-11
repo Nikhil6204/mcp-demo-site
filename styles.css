@@ -1,7 +1,7 @@
-/* ── Reset ── */
+/* ââ Reset ââ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* ── Root ── */
+/* ââ Root ââ */
 :root {
   --bg: #0d0d0d;
   --surface: #141414;
@@ -21,7 +21,7 @@ body {
   min-height: 100vh;
 }
 
-/* ── Navbar ── */
+/* ââ Navbar ââ */
 .navbar {
   display: flex;
   align-items: center;
@@ -40,151 +40,9 @@ body {
 }
 
 .nav-links {
-  display: flex;
-  gap: 28px;
-}
+  d
 
-.nav-links a {
-  color: var(--text2);
-  text-decoration: none;
-  font-size: 14px;
-  transition: color 0.2s;
-}
-
-.nav-links a:hover { color: var(--text); }
-
-/* ── Hero ── */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 80px 48px;
-  gap: 48px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.hero-text h1 {
-  font-size: 48px;
-  font-weight: 800;
-  line-height: 1.15;
-  margin-bottom: 16px;
-  letter-spacing: -1px;
-}
-
-.highlight {
-  color: var(--amber);
-}
-
-.hero-text p {
-  font-size: 16px;
-  color: var(--text2);
-  line-height: 1.7;
-  margin-bottom: 32px;
-  max-width: 480px;
-}
-
-/* ── Button Area ──
-   ID: button-area  ← MCP will target this
-   The login button is LEFT-aligned by default.
-   MCP task: move it to the RIGHT
-*/
+/* ââ Button Area ââ */
 .button-area {
-  display: flex;
-  justify-content: flex-end; /* MCP should change this to flex-end */
-  margin-top: 8px;
-}
-
-.login-btn {
-  background: var(--amber);
-  color: #000;
-  border: none;
-  padding: 14px 36px;
-  font-size: 15px;
-  font-weight: 700;
-  cursor: pointer;
-  font-family: var(--mono);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: all 0.2s;
-}
-
-.login-btn:hover {
-  background: #ffc04d;
-  box-shadow: 0 0 24px rgba(245, 166, 35, 0.4);
-}
-
-/* ── Hero Card ── */
-.hero-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  padding: 32px 40px;
-  min-width: 240px;
-  flex-shrink: 0;
-}
-
-.card-label {
-  font-family: var(--mono);
-  font-size: 9px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--text2);
-  margin-bottom: 12px;
-}
-
-.card-value {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--green);
-  margin-bottom: 6px;
-}
-
-.card-sub {
-  font-size: 12px;
-  color: var(--text2);
-  font-family: var(--mono);
-}
-
-/* ── Features ── */
-.features {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  background: var(--border);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  margin-top: 40px;
-}
-
-.feature-card {
-  background: var(--surface);
-  padding: 36px 40px;
-  text-align: center;
-}
-
-.feature-icon {
-  font-size: 28px;
-  margin-bottom: 12px;
-}
-
-.feature-title {
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.feature-desc {
-  font-size: 13px;
-  color: var(--text2);
-  line-height: 1.6;
-}
-
-/* ── Footer ── */
-.footer {
-  padding: 24px 48px;
-  text-align: center;
-  font-size: 12px;
-  color: var(--text2);
-  font-family: var(--mono);
-  border-top: 1px solid var(--border);
+  justify-content: flex-start; 
 }

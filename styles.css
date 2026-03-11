@@ -91,7 +91,7 @@ body {
 */
 .button-area {
   display: flex;
-  justify-content: flex-start; /* MCP should change this to flex-end */
+  justify-content: flex-end; /* MCP should change this to flex-end */
   margin-top: 8px;
 }
 
